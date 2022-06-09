@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <button id="change">변경</button><button id="get">불러오기</button
+    ><button id="save">저장</button><button id="clear">데이터 삭제</button
+    ><br />
+    <input id="title" type="text" placeholder="제목" /><br />
+    <input id="unit" type="text" placeholder="단원유형" /><br />
+    <select id="show">
+      <option value="201">단답형</option>
+      <option value="186">서술형</option></select
+    ><br />
+    <input id="injection" type="text" placeholder="c1_d1" /><br />
+    <textarea
+      id="editor"
+      placeholder="editor1, 풀이, bind: {c},{d} 삽입 설명 : c1,c2_d1,d2_a1,a2 -> [[c1,c2],[d1,d2]] 해당 약어 {c},{d},{a}에 맞게 데이터가 삽입됨 {a}는 answer"
+    ></textarea
+    ><br />
+    <textarea
+      id="editor2"
+      placeholder="editor2, 풀이, bind: {c},{d} 삽입 설명 : c1,c2_d1,d2_a1,a2 -> [[c1,c2],[d1,d2]] 해당 약어 {c},{d},{a}에 맞게 데이터가 삽입됨 {a}는 answer"
+    ></textarea
+    ><br />
+    <button id="clean">지우기</button><button id="titleIncrement">+1</button
+    ><button id="titleDecrement">-1</button
+    ><label
+      ><input
+        id="checkEdit"
+        type="checkbox"
+        name="editor"
+        value="scEdit"
+      />2번째 풀이로 사용</label
+    >
+    <script src="popup.js"></script>
+  </body>
+</html>
